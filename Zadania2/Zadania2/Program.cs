@@ -44,9 +44,15 @@ class Zadania2
 
     static void zad_22()
     {
-        int lata;
-        double kwota;
         double oprocentowanie = 0.06;
+
         Console.Write("Podaj kwotę, którą chcesz umieścić na lokacie: ");
+        double kwota = Int32.Parse(Console.ReadLine());
+        
+        Console.Write("Podaj na ile lat deponujesz pieniądze: ");
+        int lata = Int32.Parse(Console.ReadLine());
+
+        double wynik = kwota * (1 + oprocentowanie) * *lata;
     }
-}
+
+}}
