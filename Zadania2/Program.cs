@@ -52,7 +52,7 @@ class Zadania2
         Console.Write("Podaj na ile lat deponujesz pieniądze: ");
         int lata = Int32.Parse(Console.ReadLine());
 
-        double wynik = kwota * (1 + oprocentowanie) * *lata;
+        double wynik = kwota * Math.Pow((1 + oprocentowanie), lata);
     }
 
-}}
+}
