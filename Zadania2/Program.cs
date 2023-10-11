@@ -14,6 +14,7 @@ class Zadania2
         zad_28();
     }
 
+    // Program do obliczania średniej ocen dziesięciu studentów
     static void p21()
     {
         int suma = 0;
@@ -29,6 +30,7 @@ class Zadania2
         Console.WriteLine("Średnia z ocen wynosi: {0:N}", srednia);
     }
 
+    // Zmodyfikowany przykład 2.1 - oblicza średnią tylko z ocen pozytywnych
     static void zad_21()
     {
         int suma = 0;
@@ -49,6 +51,11 @@ class Zadania2
         Console.WriteLine("Średnia z ocen wynosi: {0:N}", srednia);
     }
 
+
+    //Klient banku deponuje na lokacie X letniej kwotę Y.
+    //Lokata jest oprocentowana 6% rocznie.
+    //Kapitalizacja odsetek odbywa się na koniec każdego roku.
+    //Program do obliczania, ile wyniesie wartość tej inwestycji po X latach. 
     static void zad_22()
     {
         double oprocentowanie = 0.06;
@@ -64,6 +71,7 @@ class Zadania2
         Console.WriteLine("Wartość inwestycji {0:c} po {1} latach = {2:c}", kwota, lata, wynik);
     }
 
+    //program do znajdowania największej (najmniejszej) liczby wśród 5-ciu liczb podanych przez użytkownika
     static void zad_23()
     {
         Console.Write("Podaj 5 liczb oddzielając je przecinkami: ");
@@ -102,6 +110,12 @@ class Zadania2
         Console.WriteLine($"Najmniejsza liczba to: {najmniejsza}");
     }
 
+    //Program do obliczania liczby punktów zdobytych przez skoczka narciarskiego. 
+    //Na liczbę punków (p), jakie otrzymuje skoczek składają się z dwa elementy: punkty zdobyte za długość skoku(pd) i punkty zdobyte za styl
+    //p = pd + ps 
+    //pd = 60 + (d - K)*S, gdzie K (punkt konstrukcyjny) = 120, S (stała zależna od wielkości skoczni) = 11.8
+    //Punkty zdobyte za styl oblicza się następująco: 5-ciu sędziów wystawia oceny w skali 0 do 20,
+    //najlepsza i najgorsza z tych ocen są odrzucane, a pozostałe są sumowane.
     static void zad_24()
     {
         int K = 120;
@@ -154,6 +168,7 @@ class Zadania2
         Console.WriteLine($"Liczba puntkow zdobytych przez skoczka to: {p:2}");
     }
 
+    // Program do obliczania silni metodą tradycyjną (nie rekurencyjne).
     static int zad_25(int n)
     {
         //Console.Write("Podaj liczbę, dla której chcesz obliczyć silnię: ");
@@ -176,6 +191,7 @@ class Zadania2
         }
     }
 
+    //Program do sprawdzania czy wczytana liczba jest pierwsza
     static void zad_26()
     {
         Console.Write("Podaj liczbę do sprawdzenia czy jest liczbą pierwszą: ");
@@ -198,6 +214,7 @@ class Zadania2
         Console.WriteLine($"Liczba {n} jest liczba pierwszą");
     }
 
+    // ZMODYFIKOWANE ZADNAIE 2.6
     static bool liczba_pierwsza(int n)
     {
         if (n < 2)
@@ -215,6 +232,9 @@ class Zadania2
 
         return true;
     }
+
+    // program, który wczytuje dwie liczby całkowite: a i b, gdzie b > a,
+    // a następnie wypisuje wszystkie liczby pierwsze z przedziału[a b].
     static void zad_27()
     {
         Console.Write("Podaj dolną granicę przedziału a (liczba całkowita): ");
@@ -240,6 +260,7 @@ class Zadania2
         }
     }
 
+    //Program, który oblicza symbol Newtona
     static void zad_28()
     {
         Console.Write("Podaj n: ");
